@@ -3,6 +3,7 @@ import namePlace from "../public/name-place.png";
 import sentence from "../public/sentence.png";
 import child from "../public/child.png";
 import calendar from "../public/calendar.png";
+import calendarLabel from "../public/calendar-label.png";
 import galleryLabel from "../public/gallery-label.png";
 import LocationLabel from "../public/location-label.png";
 import "./wedding.css";
@@ -18,13 +19,22 @@ function Wedding() {
           <img src={namePlace} alt="wedding-name-place" />
           <img src={sentence} alt="wedding-sentence" />
           <img src={child} alt="wedding-child" />
+          <img src={calendarLabel} alt="wedding-calendar-label" />
           <img src={calendar} alt="wedding-calendar" />
         </section>
 
         <section className="wedding-middle">
-          <img src={galleryLabel} alt="wedding-gallery-label" />
+          <img
+            src={galleryLabel}
+            alt="wedding-gallery-label"
+            className="gallery-label"
+          />
           <Gallery />
-          <img src={LocationLabel} alt="wedding-location-label" />
+          <img
+            src={LocationLabel}
+            alt="wedding-location-label"
+            className="location-label"
+          />
           <KakaoMap />
         </section>
 

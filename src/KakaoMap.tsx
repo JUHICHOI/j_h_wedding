@@ -4,7 +4,7 @@ function KakaoMap() {
   return (
     <Map
       center={{ lat: 35.878169, lng: 128.673931 }}
-      style={{ width: "1000px", height: "600px" }}
+      style={{ maxWidth: "1024px", width: "100%", height: "600px" }}
       level={3}
     >
       <MapMarker position={{ lat: 35.878169, lng: 128.673931 }}>
