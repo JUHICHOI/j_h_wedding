@@ -1,5 +1,4 @@
 import mainPhoto from "../public/main-photo.jpg";
-import namePlace from "../public/name-place.png";
 import sentence from "../public/sentence.png";
 import child from "../public/child.png";
 import calendar from "../public/calendar.png";
@@ -16,26 +15,33 @@ function Wedding() {
       <div className="wedding-wrapper">
         <section className="wedding-top">
           <img src={mainPhoto} alt="wedding-main-photo" />
-          <img src={namePlace} alt="wedding-name-place" />
           <img src={sentence} alt="wedding-sentence" />
           <img src={child} alt="wedding-child" />
-          <img src={calendarLabel} alt="wedding-calendar-label" />
-          <img src={calendar} alt="wedding-calendar" />
         </section>
 
         <section className="wedding-middle">
-          <img
-            src={galleryLabel}
-            alt="wedding-gallery-label"
-            className="gallery-label"
-          />
-          <Gallery />
-          <img
-            src={LocationLabel}
-            alt="wedding-location-label"
-            className="location-label"
-          />
-          <KakaoMap />
+          <div>
+            <img src={calendarLabel} alt="wedding-calendar-label" />
+            <img src={calendar} alt="wedding-calendar" />
+          </div>
+
+          {/* <div>
+            <img
+              src={galleryLabel}
+              alt="wedding-gallery-label"
+              className="gallery-label"
+            />
+            <Gallery />
+          </div> */}
+
+          <div>
+            <img
+              src={LocationLabel}
+              alt="wedding-location-label"
+              className="location-label"
+            />
+            <KakaoMap />
+          </div>
         </section>
 
         <section></section>
