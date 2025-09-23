@@ -8,7 +8,6 @@
 }
 
 .wedding-page {
-  width: 100vw;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -19,6 +18,10 @@
   width: 100%;
 }
 
+img.main-photo {
+  width: 100%;
+  margin-bottom: 10rem;
+}
 .wedding-top {
   display: flex;
   flex-direction: column;
@@ -26,102 +29,105 @@
   align-items: center;
   gap: 10rem;
 }
-.wedding-top img:nth-child(1) {
-  width: 100%;
+.wedding-top img.sentence,
+.wedding-top img.child {
+  width: max-content;
 }
-.wedding-top img:nth-child(2),
-.wedding-top img:nth-child(3) {
+.wedding-calendar {
+  text-align: center;
+}
+.calendar-label {
+  width: 70%;
+  margin-bottom: -1rem;
+}
+.wedding-calendar img:nth-child(2) {
   width: max-content;
 }
 
-.name-place-wrapper {
+.wedding-gallery {
+  margin-block: 10rem;
   text-align: center;
-  font-family: "dahyeon";
+}
+.wedding-gallery .gallery-label {
+  width: 50%;
+}
+.wedding-gallery .gallery {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
-.wedding-middle {
+.wedding-bottom {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   gap: 10rem;
 }
-/* .wedding-page img {
+.wedding-location .kakao-map {
+  max-width: 960px;
   width: 100%;
+  height: 500px;
+}
+.wedding-location,
+.wedding-timeline,
+.wedding-account {
+  text-align: center;
+}
+.wedding-location .location-label {
+  width: 70%;
+  margin-bottom: 1rem;
 }
 
-.wedding-top img {
-  max-width: max-content;
-  margin: 0 auto;
-  display: flex;
-  justify-content: center;
+.wedding-timeline .timeline-label {
+  width: 70%;
 }
-.wedding-top img:nth-child(2) {
-  padding-block: 5rem;
-  width: 80%;
-}
-.wedding-top img:nth-child(3) {
-  width: 80%;
-}
-.wedding-top img:nth-child(4) {
-  padding-block: 5rem;
-  width: 80%;
-}
-.wedding-top img:nth-child(5) {
-  display: flex;
-  justify-content: center;
-  margin: 0 auto;
-}
-.wedding-top img:nth-child(6) {
-  padding-bottom: 5rem;
+.wedding-account .account-label {
+  width: 70%;
 }
 
-.wedding-middle .gallery-label,
-.wedding-middle .location-label {
-  width: 50%;
-  display: flex;
-  justify-content: center;
-  margin: 0 auto;
-}
-.location-label {
-  padding-top: 5rem;
-}
-
-@media screen and (max-width: 786px) {
-  .wedding-top img {
-    max-width: max-content;
-    margin: 0 auto;
-    display: flex;
-    justify-content: center;
+@media screen and (max-width: 768px) {
+  img.main-photo {
+    margin-bottom: 5rem;
   }
-  .wedding-top img:nth-child(2) {
-    padding-block: 3rem;
-    width: 80%;
+  .wedding-top {
+    gap: 5rem;
+    padding-inline: 1rem;
   }
-  .wedding-top img:nth-child(3) {
+  .wedding-top img.sentence {
+    width: 75%;
+  }
+  .wedding-top img.child {
     width: 100%;
   }
-  .wedding-top img:nth-child(4) {
-    padding-block: 3rem;
+  .calendar-label {
+    width: 90%;
+  }
+  .wedding-calendar img:nth-child(2) {
     width: 100%;
-  }
-  .wedding-top img:nth-child(5) {
-    display: flex;
-    justify-content: center;
-    margin: 0 auto;
-  }
-  .wedding-top img:nth-child(6) {
-    padding-bottom: 3rem;
   }
 
-  .wedding-middle .gallery-label,
-  .wedding-middle .location-label {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    margin: 0 auto;
+  .wedding-gallery {
+    margin-block: 5rem;
   }
-  .location-label {
-    padding-top: 3rem;
+  .wedding-gallery .gallery-label {
+    width: 60%;
   }
-} */
+
+  .wedding-bottom {
+    gap: 5rem;
+  }
+  .wedding-location .kakao-map {
+    height: 300px;
+  }
+  .wedding-location .location-label {
+    width: 75%;
+  }
+
+  .wedding-timeline .timeline-label {
+    width: 50%;
+  }
+  .wedding-account .account-label {
+    width: 55%;
+  }
+}

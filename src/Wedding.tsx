@@ -1,10 +1,12 @@
 import mainPhoto from "../public/main-photo.jpg";
-import sentence from "../public/sentence.png";
+import sentence from "../public/sentence-white.png";
 import child from "../public/child.png";
 import calendar from "../public/calendar.png";
 import calendarLabel from "../public/calendar-label.png";
 import galleryLabel from "../public/gallery-label.png";
 import LocationLabel from "../public/location-label.png";
+import TimelineLabel from "../public/timeline-label.png";
+import AccountLabel from "../public/account-label.png";
 import "./wedding.css";
 import Gallery from "./Gallery";
 import KakaoMap from "./KakaoMap";
@@ -13,28 +15,31 @@ function Wedding() {
   return (
     <div className="wedding-page">
       <div className="wedding-wrapper">
+        <img src={mainPhoto} alt="wedding-main-photo" className="main-photo" />
         <section className="wedding-top">
-          <img src={mainPhoto} alt="wedding-main-photo" />
-          <img src={sentence} alt="wedding-sentence" />
-          <img src={child} alt="wedding-child" />
-        </section>
-
-        <section className="wedding-middle">
-          <div>
-            <img src={calendarLabel} alt="wedding-calendar-label" />
+          <img src={sentence} alt="wedding-sentence" className="sentence" />
+          <img src={child} alt="wedding-child" className="child" />
+          <div className="wedding-calendar">
+            <img
+              src={calendarLabel}
+              alt="wedding-calendar-label"
+              className="calendar-label"
+            />
             <img src={calendar} alt="wedding-calendar" />
           </div>
+        </section>
 
-          {/* <div>
-            <img
-              src={galleryLabel}
-              alt="wedding-gallery-label"
-              className="gallery-label"
-            />
-            <Gallery />
-          </div> */}
+        <section className="wedding-gallery">
+          <img
+            src={galleryLabel}
+            alt="wedding-gallery-label"
+            className="gallery-label"
+          />
+          <Gallery />
+        </section>
 
-          <div>
+        <section className="wedding-bottom">
+          <div className="wedding-location">
             <img
               src={LocationLabel}
               alt="wedding-location-label"
@@ -42,9 +47,23 @@ function Wedding() {
             />
             <KakaoMap />
           </div>
-        </section>
 
-        <section></section>
+          <div className="wedding-timeline">
+            <img
+              src={TimelineLabel}
+              alt="wedding-timeline-label"
+              className="timeline-label"
+            />
+          </div>
+
+          <div className="wedding-account">
+            <img
+              src={AccountLabel}
+              alt="wedding-account-label"
+              className="account-label"
+            />
+          </div>
+        </section>
       </div>
     </div>
   );
