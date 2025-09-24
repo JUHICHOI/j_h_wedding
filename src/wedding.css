@@ -17,10 +17,17 @@
   max-width: 960px;
   width: 100%;
 }
-
-img.main-photo {
-  width: 100%;
+.main-photo {
   margin-bottom: 10rem;
+  width: 100%;
+  position: relative;
+  /* background-color: #f1ecf0; */
+}
+.main-photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
 }
 .wedding-top {
   display: flex;
@@ -125,8 +132,10 @@ img.main-photo {
 }
 
 @media screen and (max-width: 768px) {
-  img.main-photo {
+  .main-photo {
     margin-bottom: 5rem;
+    height: 90vh;
+    overflow: hidden;
   }
   .wedding-top {
     gap: 5rem;

@@ -16,7 +16,10 @@ function Wedding() {
   return (
     <div className="wedding-page">
       <div className="wedding-wrapper">
-        <img src={mainPhoto} alt="wedding-main-photo" className="main-photo" />
+        <section className="main-photo">
+          <img src={mainPhoto} alt="wedding-main-photo" />
+        </section>
+
         <section className="wedding-top">
           <img src={sentence} alt="wedding-sentence" className="sentence" />
           <img src={child} alt="wedding-child" className="child" />
