@@ -9,17 +9,19 @@ function Direction() {
       <div className="direction-item">
         <div className="direction-label">주소</div>
         <div className="direction-content">
-          <div>
+          <div className="direction-address">
             <span>대구 동구 동촌로 316 (방촌동 1113-320)</span>
-            <button
+            <a
               onClick={() => copy("대구 동구 동촌로 316 (방촌동 1113-320)")}
+              className="direction-button"
+              style={{ color: isCopied ? "#ff4e8f" : "#333" }}
             >
               {isCopied ? "copied" : "copy"}
-            </button>
+            </a>
           </div>
-          <div>
+          <div className="direction-tel">
             <span>Tel. 053-939-2000</span>
-            <a href={`tel:${"053-939-2000"}`} className="call-button">
+            <a href={`tel:${"053-939-2000"}`} className="direction-button">
               call
             </a>
           </div>
