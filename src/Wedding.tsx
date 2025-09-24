@@ -10,6 +10,7 @@ import AccountLabel from "../public/account-label.png";
 import "./wedding.css";
 import Gallery from "./Gallery";
 import KakaoMap from "./KakaoMap";
+import Direction from "./Direction.";
 
 function Wedding() {
   return (
@@ -46,6 +47,7 @@ function Wedding() {
               className="location-label"
             />
             <KakaoMap />
+            <Direction />
           </div>
 
           <div className="wedding-timeline">

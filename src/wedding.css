@@ -78,6 +78,44 @@ img.main-photo {
   width: 70%;
   margin-bottom: 1rem;
 }
+.wedding-location .direction {
+  margin-top: 2rem;
+  padding-inline: 1rem;
+  text-align: left;
+  /* font-family: "ryuryu"; */
+  font-family: "dahyeon";
+  font-size: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.wedding-location .direction p {
+  margin-block: 0;
+}
+.direction-label {
+  background-image: url("../public/label-back.png");
+  background-repeat: no-repeat;
+  background-position: left;
+  background-size: contain;
+  padding-left: 0.5rem;
+}
+.call-button {
+  /* a 태그를 button처럼 보이게 하는 스타일 */
+  display: inline-block;
+  padding: 1px 6px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: #f0f0f0;
+  color: #333;
+  text-decoration: none;
+  font-family: sans-serif;
+  font-size: 14px;
+  cursor: pointer;
+  margin-left: 8px;
+}
+.call-button:hover {
+  background-color: #e0e0e0;
+}
 
 .wedding-timeline .timeline-label {
   width: 70%;
@@ -95,7 +133,7 @@ img.main-photo {
     padding-inline: 1rem;
   }
   .wedding-top img.sentence {
-    width: 75%;
+    width: 90%;
   }
   .wedding-top img.child {
     width: 100%;
