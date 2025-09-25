@@ -1,5 +1,4 @@
 import { Map, MapMarker } from "react-kakao-maps-sdk";
-import "./wedding.css";
 
 function KakaoMap() {
   return (

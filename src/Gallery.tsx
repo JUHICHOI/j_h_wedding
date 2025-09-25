@@ -15,7 +15,6 @@ import gallery12 from "../public/gallery/12.jpg";
 import gallery13 from "../public/gallery/13.jpg";
 import gallery14 from "../public/gallery/14.jpg";
 import gallery15 from "../public/gallery/15.jpg";
-import "./wedding.css";
 
 function Gallery() {
   return (

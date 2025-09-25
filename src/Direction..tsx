@@ -1,5 +1,4 @@
 import { useCopyToClipboard } from "./wedding-util";
-import "./wedding.css";
 
 function Direction() {
   const [isCopied, copy] = useCopyToClipboard();

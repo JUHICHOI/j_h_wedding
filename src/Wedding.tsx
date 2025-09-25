@@ -11,6 +11,8 @@ import "./wedding.css";
 import Gallery from "./Gallery";
 import KakaoMap from "./KakaoMap";
 import Direction from "./Direction.";
+import Account from "./Account";
+import Sentence from "./Sentence";
 
 function Wedding() {
   return (
@@ -21,7 +23,8 @@ function Wedding() {
         </section>
 
         <section className="wedding-top">
-          <img src={sentence} alt="wedding-sentence" className="sentence" />
+          {/* <img src={sentence} alt="wedding-sentence" className="sentence" /> */}
+          <Sentence />
           <img src={child} alt="wedding-child" className="child" />
           <div className="wedding-calendar">
             <img
@@ -67,6 +70,7 @@ function Wedding() {
               alt="wedding-account-label"
               className="account-label"
             />
+            <Account />
           </div>
         </section>
       </div>
