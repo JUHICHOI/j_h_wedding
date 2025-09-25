@@ -6,7 +6,8 @@ function Account() {
   const toggleGroomAccount = () => setIsGroomOpen(!isGroomOpen);
 
   const [isBrideOpen, setIsBrideOpen] = useState(false);
-  const toggleBrideAccount = () => setIsGroomOpen(!isGroomOpen);
+  const toggleBrideAccount = () => setIsBrideOpen(!isBrideOpen);
+
   const [isCopied, copy] = useCopyToClipboard();
 
   return (
