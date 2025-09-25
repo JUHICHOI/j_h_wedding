@@ -8,7 +8,15 @@ function KakaoMap() {
       level={4}
     >
       <MapMarker position={{ lat: 35.878169, lng: 128.673931 }}>
-        {/* <div style={{ padding: "5px", color: "#000" }}>여기입니다</div> */}
+        <div
+          style={{
+            width: "150px",
+            textAlign: "center",
+            whiteSpace: "nowrap",
+          }}
+        >
+          M스타 하우스 ♥
+        </div>
       </MapMarker>
     </Map>
   );

@@ -9,6 +9,9 @@ function Account() {
   const toggleBrideAccount = () => setIsBrideOpen(!isBrideOpen);
 
   const [isCopied, copy] = useCopyToClipboard();
+  const [isCopiedBride1, copyBride1] = useCopyToClipboard();
+  const [isCopiedBride2, copyBride2] = useCopyToClipboard();
+  const [isCopiedBride3, copyBride3] = useCopyToClipboard();
 
   return (
     <div className="account-container">
@@ -54,9 +57,9 @@ function Account() {
             </div>
             <button
               className="account-copy"
-              onClick={() => copy("123-456-78910")}
+              onClick={() => copyBride1("123-456-78910")}
             >
-              {isCopied ? "OK!" : "복사"}
+              {isCopiedBride1 ? "OK!" : "복사"}
             </button>
           </div>
 
@@ -67,9 +70,9 @@ function Account() {
             </div>
             <button
               className="account-copy"
-              onClick={() => copy("123-456-78910")}
+              onClick={() => copyBride2("123-456-78910")}
             >
-              {isCopied ? "OK!" : "복사"}
+              {isCopiedBride2 ? "OK!" : "복사"}
             </button>
           </div>
 
@@ -80,9 +83,9 @@ function Account() {
             </div>
             <button
               className="account-copy"
-              onClick={() => copy("123-456-78910")}
+              onClick={() => copyBride3("123-456-78910")}
             >
-              {isCopied ? "OK!" : "복사"}
+              {isCopiedBride3 ? "OK!" : "복사"}
             </button>
           </div>
         </div>

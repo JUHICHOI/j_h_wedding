@@ -1,6 +1,6 @@
 function Sentence() {
   return (
-    <div className="wedding-sentence">
+    <div className="sentence">
       <p>2014년 가을에 만나 20대,</p>
       <p>온통 봄 같은 시절을 보냈습니다.</p>
       <p>31살, 저희 인생의 여름을</p>

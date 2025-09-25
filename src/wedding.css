@@ -28,6 +28,33 @@
   object-position: center;
 }
 
+/* 문장 */
+.wedding-sentence {
+  background-image: url("../public/sentence-back.gif");
+  text-align: center;
+}
+.wedding-name-place {
+  padding-top: 2rem;
+  font-size: 1.5rem;
+  line-height: normal;
+}
+.wedding-name-place p:nth-child(1) {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+.wedding-name-place p:nth-child(1) strong {
+  margin-inline: 0.75rem;
+}
+.wedding-ribon {
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  max-width: 480px;
+}
+.sentence {
+  font-size: 1.75rem;
+  padding-bottom: 10rem;
+}
+
 /* 상단 */
 .wedding-top {
   display: flex;
@@ -35,15 +62,8 @@
   justify-content: center;
   align-items: center;
 }
-.wedding-top img.sentence,
 .wedding-top img.child {
   width: max-content;
-}
-.wedding-sentence {
-  text-align: center;
-  font-size: 32px;
-  background-image: url("../public/sentence-back.gif");
-  padding-block: 10rem;
 }
 .wedding-calendar {
   text-align: center;
@@ -100,7 +120,7 @@
   margin: 2rem auto 0;
   padding-inline: 1rem;
   text-align: left;
-  font-size: 20px;
+  font-size: 1.25rem;
   display: flex;
   flex-direction: column;
   gap: 1rem;
@@ -121,7 +141,7 @@
 .direction-button {
   line-height: normal;
   cursor: pointer;
-  background-image: url(/j_h_wedding/public/label-back-4.png);
+  background-image: url("../public/label-back-4.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
@@ -174,10 +194,10 @@
   background-color: #bde0fe;
 }
 .account-subject {
-  font-size: 24px;
+  font-size: 1.5rem;
 }
 .account-icon {
-  font-size: 16px;
+  font-size: 1rem;
   line-height: normal;
   transition: transform 0.4s ease; /* 아이콘 회전 애니메이션 */
 }
@@ -225,21 +245,22 @@
   .wedding-wrapper {
     padding-bottom: 5rem;
   }
-  .main-photo {
+  /* .main-photo {
     height: 90vh;
     overflow: hidden;
-  }
-  .wedding-top img.sentence {
-    width: 90%;
-  }
+  } */
   .wedding-top img.child {
     width: 100%;
   }
-  .wedding-sentence {
-    padding-block: 6rem;
+  .wedding-name-place {
+    padding-top: 2.75rem;
+  }
+  .sentence {
+    padding-bottom: 5rem;
   }
   .wedding-calendar {
     padding-top: 5rem;
+    padding-inline: 0.5rem;
   }
   .calendar-label {
     width: 90%;
@@ -281,5 +302,10 @@
 @media screen and (max-width: 480px) {
   .wedding-location .direction {
     max-width: 100%;
+  }
+  .wedding-ribon {
+    margin-top: 1rem;
+    margin-bottom: 0.75rem;
+    width: 100%;
   }
 }
