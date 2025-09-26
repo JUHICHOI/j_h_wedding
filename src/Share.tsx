@@ -97,7 +97,7 @@ function Share() {
     };
   }, []);
 
-  const currentUrl = window.location.href;
+  const currentUrl = "https://juhichoi.github.io/j_h_wedding/";
 
   const handleShare = () => {
     if (window.Kakao) {
