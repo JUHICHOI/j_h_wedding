@@ -13,6 +13,7 @@ import KakaoMap from "./KakaoMap";
 import Direction from "./Direction.";
 import Account from "./Account";
 import Sentence from "./Sentence";
+import Share from "./Share";
 
 function Wedding() {
   return (
@@ -81,6 +82,10 @@ function Wedding() {
               className="account-label"
             />
             <Account />
+          </div>
+
+          <div className="wedding-share">
+            <Share />
           </div>
         </section>
       </div>
