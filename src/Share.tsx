@@ -128,7 +128,7 @@ function Share() {
 
   return (
     <div>
-      <button
+      {/* <button
         style={buttonStyle}
         onClick={handleShare}
         onMouseOver={(e) => {
@@ -142,8 +142,8 @@ function Share() {
       >
         <span>카카오톡 공유</span>
         <ShareIcon />
-      </button>
-      <div style={{ height: "2rem" }}></div>
+      </button> */}
+      {/* <div style={{ height: "2rem" }}></div> */}
 
       <button
         style={copyButtonStyle}
